@@ -3,27 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F17B43C26FCC33800A8D055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17B43B26FCC33800A8D055 /* AppDelegate.swift */; };
-		3F17B43E26FCC33800A8D055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17B43D26FCC33800A8D055 /* SceneDelegate.swift */; };
-		3F17B44026FCC33800A8D055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17B43F26FCC33800A8D055 /* ViewController.swift */; };
-		3F17B44326FCC33800A8D055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F17B44126FCC33800A8D055 /* Main.storyboard */; };
+		3F17B44026FCC33800A8D055 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F17B43F26FCC33800A8D055 /* MainTabViewController.swift */; };
 		3F17B44526FCC33A00A8D055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F17B44426FCC33A00A8D055 /* Assets.xcassets */; };
 		3F17B44826FCC33A00A8D055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F17B44626FCC33A00A8D055 /* LaunchScreen.storyboard */; };
+		3F17B45126FCC52000A8D055 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F17B45026FCC52000A8D055 /* SnapKit */; };
+		3FE5566126FCCE2D00027695 /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5566026FCCE2D00027695 /* VerticalViewController.swift */; };
+		3FE5566326FCCE5400027695 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5566226FCCE5400027695 /* HorizontalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F17B43826FCC33800A8D055 /* ScrollView-SnapKit-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScrollView-SnapKit-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F17B43B26FCC33800A8D055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F17B43D26FCC33800A8D055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F17B43F26FCC33800A8D055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F17B44226FCC33800A8D055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F17B43F26FCC33800A8D055 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		3F17B44426FCC33A00A8D055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F17B44726FCC33A00A8D055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F17B44926FCC33A00A8D055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE5566026FCCE2D00027695 /* VerticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
+		3FE5566226FCCE5400027695 /* HorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F17B45126FCC52000A8D055 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				3F17B43B26FCC33800A8D055 /* AppDelegate.swift */,
-				3F17B43D26FCC33800A8D055 /* SceneDelegate.swift */,
-				3F17B43F26FCC33800A8D055 /* ViewController.swift */,
-				3F17B44126FCC33800A8D055 /* Main.storyboard */,
+				3F17B43F26FCC33800A8D055 /* MainTabViewController.swift */,
+				3FE5566026FCCE2D00027695 /* VerticalViewController.swift */,
+				3FE5566226FCCE5400027695 /* HorizontalViewController.swift */,
 				3F17B44426FCC33A00A8D055 /* Assets.xcassets */,
 				3F17B44626FCC33A00A8D055 /* LaunchScreen.storyboard */,
 				3F17B44926FCC33A00A8D055 /* Info.plist */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "ScrollView-SnapKit-Sample";
+			packageProductDependencies = (
+				3F17B45026FCC52000A8D055 /* SnapKit */,
+			);
 			productName = "ScrollView-SnapKit-Sample";
 			productReference = 3F17B43826FCC33800A8D055 /* ScrollView-SnapKit-Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 3F17B42F26FCC33800A8D055;
+			packageReferences = (
+				3F17B44F26FCC52000A8D055 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3F17B43926FCC33800A8D055 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +134,6 @@
 			files = (
 				3F17B44826FCC33A00A8D055 /* LaunchScreen.storyboard in Resources */,
 				3F17B44526FCC33A00A8D055 /* Assets.xcassets in Resources */,
-				3F17B44326FCC33800A8D055 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +144,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F17B44026FCC33800A8D055 /* ViewController.swift in Sources */,
+				3F17B44026FCC33800A8D055 /* MainTabViewController.swift in Sources */,
 				3F17B43C26FCC33800A8D055 /* AppDelegate.swift in Sources */,
-				3F17B43E26FCC33800A8D055 /* SceneDelegate.swift in Sources */,
+				3FE5566326FCCE5400027695 /* HorizontalViewController.swift in Sources */,
+				3FE5566126FCCE2D00027695 /* VerticalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F17B44126FCC33800A8D055 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F17B44226FCC33800A8D055 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F17B44626FCC33A00A8D055 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yusinoue1008.ScrollView-SnapKit-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yusinoue1008.ScrollView-SnapKit-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F17B44F26FCC52000A8D055 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F17B45026FCC52000A8D055 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F17B44F26FCC52000A8D055 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F17B43026FCC33800A8D055 /* Project object */;
 }
