@@ -16,7 +16,7 @@ final class MainTabViewController: UITabBarController {
         
         let verticalViewController: UIViewController = {
             let viewController = VerticalViewController()
-            viewController.tabBarItem = UITabBarItem(title: "縦スクロール", image: UIImage(), tag: 0)
+            viewController.tabBarItem = UITabBarItem(title: "縦スクロール", image: UIImage(named: "Tate"), tag: 0)
             
             let navigationController = UINavigationController(rootViewController: viewController)
             navigationController.navigationBar.isTranslucent = false
@@ -25,7 +25,7 @@ final class MainTabViewController: UITabBarController {
         
         let horizontalViewController: UIViewController = {
             let viewController = HorizontalViewController()
-            viewController.tabBarItem = UITabBarItem(title: "横スクロール", image: UIImage(), tag: 0)
+            viewController.tabBarItem = UITabBarItem(title: "横スクロール", image: UIImage(named: "Yoko"), tag: 0)
             
             let navigationController = UINavigationController(rootViewController: viewController)
             navigationController.navigationBar.isTranslucent = false
