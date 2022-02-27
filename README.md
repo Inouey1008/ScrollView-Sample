@@ -1,6 +1,3 @@
 # ScrollView-SnapKit-Sample
 ScrollView + AutoLayout (SnapKit)
-
-### Qiita に以下の記事を書いています。
-
-[【Swift】ScrollView + AutoLayout (SnapKit) での実装メモ](https://qiita.com/yusinoue1008/items/452b5824c0bc84a3b1c4)
+![ScrollView+AutoLayout](https://user-images.githubusercontent.com/80803218/155877743-c0c2ec92-4b1e-422e-b211-dad548477ff5.gif)
